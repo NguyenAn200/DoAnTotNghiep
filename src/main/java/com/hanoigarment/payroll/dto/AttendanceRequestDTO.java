@@ -11,11 +11,8 @@ import java.time.LocalTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class AttendanceDTO {
-    private Integer attendanceId;
+public class AttendanceRequestDTO {
     private Integer employeeId;
-    private String employeeCode;
-    private String employeeName;
     private LocalDate workDate;
     private LocalTime checkIn;
     private LocalTime checkOut;
@@ -23,6 +20,4 @@ public class AttendanceDTO {
     private BigDecimal overtimeHours;
     private String status;
     private String note;
-    private String departmentName;
-    private String positionName;
 }

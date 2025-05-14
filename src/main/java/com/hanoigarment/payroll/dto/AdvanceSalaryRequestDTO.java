@@ -10,17 +10,13 @@ import java.time.LocalDate;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class AdvanceSalaryDTO {
-    private Integer advanceId;
+public class AdvanceSalaryRequestDTO {
     private Integer employeeId;
-    private String employeeCode;
-    private String employeeName;
     private LocalDate requestDate;
     private BigDecimal amount;
     private String reason;
     private String status;
     private LocalDate approvalDate;
     private Integer approvedBy;
-    private String approvedName;
     private String note;
 }

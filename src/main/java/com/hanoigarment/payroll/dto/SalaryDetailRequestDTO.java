@@ -5,14 +5,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class PositionDTO {
-    private Integer positionId;
-    private String positionName;
-    private BigDecimal baseSalary;
+@AllArgsConstructor
+public class SalaryDetailRequestDTO {
+    private Integer salaryId;
+    private String itemName;
+    private String itemType;
+    private BigDecimal amount;
     private String description;
 }

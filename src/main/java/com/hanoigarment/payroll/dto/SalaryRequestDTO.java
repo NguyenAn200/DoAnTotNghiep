@@ -11,11 +11,8 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SalaryDTO {
-    private Integer salaryId;
+public class SalaryRequestDTO {
     private Integer employeeId;
-    private String employeeCode;
-    private String employeeName;
     private Integer periodMonth;
     private Integer periodYear;
     private BigDecimal baseSalary;
@@ -32,7 +29,5 @@ public class SalaryDTO {
     private BigDecimal netSalary;
     private LocalDateTime paymentDate;
     private String paymentStatus;
-    private String departmentName;
-    private String positionName;
-    private List<SalaryDetailDTO> salaryDetails;
+    private List<SalaryDetailRequestDTO> salaryDetails;
 }

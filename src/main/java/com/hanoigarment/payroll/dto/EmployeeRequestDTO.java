@@ -5,12 +5,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class EmployeeDTO {
-    private Integer employeeId;
+public class EmployeeRequestDTO {
     private String employeeCode;
     private String fullName;
     private LocalDate dateOfBirth;
@@ -24,7 +22,5 @@ public class EmployeeDTO {
     private String bankName;
     private Boolean isActive;
     private Integer departmentId;
-    private String departmentName;
     private Integer positionId;
-    private String positionName;
 }

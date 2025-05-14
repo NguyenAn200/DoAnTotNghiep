@@ -16,4 +16,8 @@ public class SalaryDetailDTO {
     private String itemType;
     private BigDecimal amount;
     private String description;
+    private Integer employeeId;
+    private String employeeName;
+    private Integer periodMonth;
+    private Integer periodYear;
 }
